@@ -9,10 +9,16 @@ class FizzBuzzTest {
 
 	FizzBuzz fizzbuzz = new FizzBuzz();
 	String i = fizzbuzz.getInput(1);
+	String i2 = fizzbuzz.getInput(2);
 	
 	@Test
 	@DisplayName("input 1 : expect 1")
 	void test1() {	
 		assertEquals("1", i);
+	}
+	@Test
+	@DisplayName("input 2 : expect 2")
+	void test2() {	
+		assertEquals("2", i2);
 	}
 }
