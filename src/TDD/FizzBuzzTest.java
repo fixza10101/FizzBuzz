@@ -19,6 +19,7 @@ class FizzBuzzTest {
 	String i9 = fizzbuzz.getInput(9);
 	String i10 = fizzbuzz.getInput(10);
 	String i11 = fizzbuzz.getInput(11);
+	String i12 = fizzbuzz.getInput(12);
 	
 	@Test
 	@DisplayName("input 1 : expect 1")
@@ -74,5 +75,10 @@ class FizzBuzzTest {
 	@DisplayName("input 11 : expect 11")
 	void test11() {	
 		assertEquals("11", i11);
+	}
+	@Test
+	@DisplayName("input 12 : expect Fizz")
+	void test12() {	
+		assertEquals("Fizz", i12);
 	}
 }
