@@ -14,7 +14,11 @@ public class FizzBuzz {
 	}
 	public static String getInput(int input) {
 		if(input > 0 && input <=100) {
-			return Integer.toString(input);
+			 if(input % 3 == 0) {
+	                return "Fizz";
+	            }else {
+	            	return Integer.toString(input);
+	            }
 		}else {
 			return "Error";
 		}
